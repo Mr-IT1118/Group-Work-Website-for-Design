@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap');
 :root {
-  --ink:#141414;
-  --paper:#f7f7f3;
-  --orange:#ff642e;
+  --ink:#181221;
+  --paper:#faf8ff;
+  --purple:#7c3aed;
+  --lavender:#c4a0ff;
   --muted:#b5b5b2;
-  --line:#d8d8d3;
+  --line:#ddd5ea;
   font-family:'DM Sans',Arial,sans-serif;
   color:var(--ink);
   background:var(--paper);
@@ -28,12 +29,12 @@ button,a {
   -webkit-tap-highlight-color:transparent
 }
 a:focus-visible {
-  outline:3px solid var(--orange);
+  outline:3px solid var(--purple);
   outline-offset:6px
 }
 ::selection {
-  background:var(--orange);
-  color:var(--ink)
+  background:var(--purple);
+  color:white
 }
 .skip-link {
   position:fixed;
@@ -63,7 +64,7 @@ a:focus-visible {
   font-family:'Barlow Condensed','Arial Narrow',Impact,sans-serif
 }
 .brand-dot {
-  color:var(--orange);
+  color:var(--purple);
   font-family:Arial,sans-serif;
   font-size:12px;
   vertical-align:top;
@@ -90,7 +91,7 @@ a:focus-visible {
   right:0;
   bottom:7px;
   transform:scaleX(0);
-  background:var(--orange);
+  background:var(--purple);
   transition:transform .2s
 }
 .header nav a:hover:after,.header nav .active:after {
@@ -136,7 +137,7 @@ a:focus-visible {
 }
 .hero-shade {
   z-index:-1;
-  background:linear-gradient(90deg,rgba(9,10,9,.77) 0%,rgba(9,10,9,.43) 43%,rgba(9,10,9,.04) 72%),linear-gradient(0deg,rgba(9,10,9,.78),transparent 30%)
+  background:linear-gradient(90deg,rgba(24,10,42,.77) 0%,rgba(24,10,42,.43) 43%,rgba(24,10,42,.04) 72%),linear-gradient(0deg,rgba(24,10,42,.78),transparent 30%)
 }
 .hero-content {
   padding:80px 4.2% 120px;
@@ -155,7 +156,7 @@ a:focus-visible {
   display:inline-block;
   width:30px;
   height:2px;
-  background:var(--orange)
+  background:var(--purple)
 }
 h1,h2 {
   font-family:'Barlow Condensed',Impact,'Arial Narrow',sans-serif;
@@ -168,7 +169,7 @@ h1 {
   font-size:clamp(6rem,10.8vw,10.5rem)
 }
 h1 span {
-  color:var(--orange)
+  color:var(--lavender)
 }
 .hero-description {
   font-size:1.0625rem;
@@ -183,14 +184,14 @@ h1 span {
   justify-content:space-between;
   gap:46px;
   padding:18px 24px;
-  background:var(--orange);
-  color:var(--ink);
+  background:var(--purple);
+  color:white;
   font-size:.9375rem;
   font-weight:700;
   transition:background .2s,transform .2s
 }
 .button:hover {
-  background:#ff8257;
+  background:#6d28d9;
   transform:translateY(-2px)
 }
 .button span {
@@ -221,7 +222,8 @@ h1 span {
   padding-left:15px
 }
 .statement-strip {
-  background:var(--orange);
+  background:var(--purple);
+  color:white;
   display:flex;
   align-items:center;
   justify-content:space-evenly;
@@ -338,7 +340,7 @@ h1 span {
   line-height:.97
 }
 .story h2 span {
-  color:var(--orange)
+  color:var(--lavender)
 }
 .story-copy {
   max-width:410px;
@@ -477,7 +479,7 @@ footer p {
     object-position:64% center
   }
   .hero-shade {
-    background:linear-gradient(90deg,rgba(9,10,9,.8),rgba(9,10,9,.2)),linear-gradient(0deg,rgba(9,10,9,.85),transparent 65%)
+    background:linear-gradient(90deg,rgba(24,10,42,.8),rgba(24,10,42,.2)),linear-gradient(0deg,rgba(24,10,42,.85),transparent 65%)
   }
   .hero-content {
     padding:80px 6% 125px;
@@ -616,3 +618,38 @@ footer p {
   }
 
 }
+
+/* Purple brand and homepage contact intake */
+.header-cta { border-color:var(--purple); color:var(--purple) }
+.header-cta:hover { background:var(--purple) }
+.brand-dot { font-size:20px; margin-top:0 }
+.contact { padding:90px 4.2%; display:grid; grid-template-columns:1fr 1.1fr; gap:70px; background:#f0eafa }
+.contact h2 { font-size:clamp(3.3rem,5.5vw,5.2rem) }
+.contact h2 span { color:var(--purple) }
+.contact-copy>p:last-child { max-width:370px; line-height:1.8; color:#61566e; margin-top:28px }
+.contact-form { min-width:0 }
+.form-row { display:grid; grid-template-columns:1fr 1fr; gap:20px }
+.field { display:flex; flex-direction:column; gap:9px; margin-bottom:20px; min-width:0 }
+.field label { font-size:.875rem; font-weight:700 }
+input,select,textarea { width:100%; min-width:0; border:1px solid #b9aacd; border-radius:0; padding:14px; color:var(--ink); background:var(--paper); font:inherit }
+textarea { resize:vertical; min-height:130px }
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible { outline:3px solid var(--purple); outline-offset:3px }
+button { cursor:pointer; font-family:inherit; border:0 }
+.form-note { color:#61566e; font-size:.875rem; line-height:1.6 }
+.form-preview { border-left:3px solid var(--purple); padding:20px; margin-top:24px; background:var(--paper); overflow-wrap:anywhere }
+.form-preview h3 { margin:0 0 12px }
+.form-preview p { line-height:1.65 }
+.form-preview dl { display:grid; grid-template-columns:auto 1fr; gap:10px 18px }
+.form-preview dt { font-weight:700 }
+.form-preview dd { margin:0; white-space:pre-wrap }
+@media(max-width:1000px) { .header nav { gap:18px } .contact { gap:35px } }
+@media(max-width:700px) { .contact { padding:60px 6%; grid-template-columns:1fr; gap:30px } .form-row { grid-template-columns:1fr; gap:0 } .header nav { gap:12px } }
+.contact-copy { min-width:0 }
+@media(max-width:700px) {
+  .contact { grid-template-columns:minmax(0,1fr) }
+  .contact h2 { font-size:clamp(2rem,9vw,3.3rem) }
+}
+/* Keep headline lines readable even when web fonts are unavailable. */
+h1 { font-size:clamp(4.5rem,8vw,9rem) }
+@media(max-width:1000px) and (min-width:701px) { .hero h1 { font-size:clamp(4.5rem,8.5vw,6rem) } }
+@media(max-width:700px) { .hero h1 { font-size:clamp(2.4rem,12vw,5rem) } }

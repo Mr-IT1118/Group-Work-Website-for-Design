@@ -1,7 +1,21 @@
 # COURTSIDE — Basketball Homepage
 
+## 更新已有项目（紫色版）
+
+此文件包尚未同步 GitHub：当前连接没有仓库写入权限。
+先在原项目中 `git pull --ff-only`，再将压缩包内容覆盖到 `D:\group work website`（保留原 `.git` 文件夹）。随后执行：
+
+```bash
+git add .
+git commit -m "Update purple theme and homepage requirements"
+git push
+```
+
+作业设计说明在 `docs/design-plan.html`，浏览器可打开。已在 1440、768、390、320 px 浏览器视口检查页面无横向溢出，验证表单有效/无效输入、页内跳转和图片加载。
+
+
 篮球主题的英文单页网站。已整理为独立静态项目，可上传 GitHub 并使用 GitHub Pages 发布。
-不需要 npm、不需要构建、不需要 ChatGPT 登录。此次文件包未上传到你的 GitHub，也未修改原有 Sites 网站。
+不需要 npm、不需要构建、不需要 ChatGPT 登录。此项目对应 GitHub 版本；与原有 Sites 网站独立。
 
 ## 1. 放到你的电脑
 
@@ -27,7 +41,7 @@ D:\group work website
 | `README.md` | 使用、发布与小组协作说明 |
 
 品牌名目前为 COURTSIDE。在 `index.html` 中搜索 `COURTSIDE` 和 `Courtside` 可修改各处显示文字；浏览器标签名称在 `<title>` 中。
-主色在 CSS 顶部 `:root` 内：`--orange` 是橙色，`--ink` 是深色，`--paper` 是浅色。
+主色在 CSS 顶部 `:root` 内：`--purple: #7C3AED` 是主题紫色，`--lavender: #C4A0FF` 用于深色背景标题，`--ink: #181221` 是深色，`--paper: #FAF8FF` 是浅色。
 换照片时替换主图文件，或在 `index.html` 的 `src` 中改成新文件路径，并同步修改 `alt` 图片描述。
 网站仅有首页，导航跳转到同一页的不同部分。
 
@@ -113,3 +127,12 @@ git push
 - GitHub Pages 发布来源：https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 - 创建静态 Pages 网站：https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
 - 邀请协作者：https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository
+
+## 紫色版与作业要求
+
+- 首页：紫色按钮、导航强调、横幅、标题和浏览器图标；保留现有篮球图片。
+- 联系表单：必填项、邮箱格式验证、消息预览；这是前端演示，不会发送或保存资料。真实收件功能需小组提供接收端，再接入表单服务或后端。
+- `docs/design-plan.html`：可用浏览器打开的网站结构、用户流程、桌面/手机线框图、品牌色与字体层级说明，可打印。
+- 当前只做首页，各导航指向首页分区。Services/Products 是作业中的示例；小组尚未确定产品或服务，不虚构销售项目。
+- COURTSIDE 文字标志为临时品牌素材，需要替换为小组最终品牌名称、Logo 和确认后的标准色。
+- 原要求写 Squarespace、Wix 或类似网页设计工具。本项目使用 HTML/CSS/JavaScript；如果老师要求指定平台，需确认是否接受代码网站。
