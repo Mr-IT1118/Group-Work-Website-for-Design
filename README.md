@@ -1,4 +1,4 @@
-# COURTSIDE — Five-page basketball website
+# COURT PHANTOMS — Five-page basketball website
 
 紫色篮球网站，全英文，共 **5 个独立页面**。普通 HTML / CSS / JavaScript，无需 npm 或构建。
 
@@ -35,7 +35,7 @@ git push
 
 https://mr-it1118.github.io/Group-Work-Website-for-Design/
 
-GitHub Pages 继续使用 `main` 和 `/(root)`。无需创建新的仓库或改变网址。每页的样式和脚本链接带版本号 `20261002-five-pages`，用于避免之前的旧主题缓存问题。
+GitHub Pages 继续使用 `main` 和 `/(root)`。无需创建新的仓库或改变网址。每页的样式和脚本链接带版本号 `20261005-brand`，用于避免之前的旧主题缓存问题。
 
 ## 修改文件
 
@@ -49,7 +49,8 @@ GitHub Pages 继续使用 `main` 和 `/(root)`。无需创建新的仓库或改�
 ## 作业交付说明
 
 - 品牌主色 `#7C3AED`；深背景标题 `#C4A0FF`；深色 `#181221`；浅色 `#FAF8FF`。
-- 临时品牌名和文字 Logo 为 COURTSIDE；有小组正式品牌素材后可统一替换。
+- 正式品牌为 Court Phantoms JJHT；五页页头、页尾及 About 页已加入小组提供的原版主 Logo。About 页另展示黑白版、CP 圆形版和白底版，共四款；浏览器图标使用 CP 版。
+- Instagram：@courtphantomsjjht；Contact 页含二维码和主页直达链接，五页页尾均有入口。
 - 标题字体 Barlow Condensed，正文字体 DM Sans。
 - 保留现有 AI 篮球主图，不代表实际球队或球员。
 - Contact 为前端演示：必填、邮箱校验、消息预览有效，但不会发送或保存信息。
@@ -58,3 +59,7 @@ GitHub Pages 继续使用 `main` 和 `/(root)`。无需创建新的仓库或改�
 - 老师若限定使用 Squarespace / Wix，需先确认是否接受代码网站。
 
 此 GitHub 项目与此前的 ChatGPT Sites 网址相互独立。
+
+## 2026-10-05 品牌更新
+
+已加入小组提供的四款 Logo 和 Instagram 联系方式。所有上传图片均保留原始文件；二维码通过网页布局展示，并提供原图入口。网站仍为紫色、五个页面，线上需重新提交并部署后更新。
