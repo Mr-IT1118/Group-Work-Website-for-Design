@@ -66,4 +66,6 @@ GitHub Pages 继续使用 `main` 和 `/(root)`。无需创建新的仓库或改�
 
 ## 宣传册
 
-首页新增 Promotional Brochure 展示区，支持原图查看和 JPG 下载；About 和五页页尾提供入口。原图位于 `assets/images/promotional-brochure.jpg`，保持上传内容不变。图片内仍有 COURTSIDE、@courtside、hello@courtside.com 和 www.courtside.com 等旧信息；网站的当前联系入口继续使用 @courtphantomsjjht。
+首页宣传册区仅显示图片，点击可查看大图；已移除区块标题、介绍、按钮及额外留白。图片外侧与行间的白底已替换为黑色，页面背景为纯黑。当前展示文件：`assets/images/promotional-brochure-black.png`（通过图片编辑功能处理）；原始 JPG 保留作为源文件。About 和五页页尾仍有入口。
+
+宣传册图片内仍是原来的 COURTSIDE 联系信息，当前联系方式请以 Contact 页 @courtphantomsjjht 为准。

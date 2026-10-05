@@ -810,19 +810,10 @@ summary:focus-visible { outline:3px solid var(--purple); outline-offset:4px }
 @media(min-width:701px) and (max-width:900px) { .header { height:auto; min-height:96px; padding-top:14px; padding-bottom:14px; flex-wrap:wrap; gap:12px } .header nav { width:100%; justify-content:space-between; gap:16px } }
 @media(max-width:700px) { .logo-variants { grid-template-columns:minmax(0,1fr) } .logo-collection { margin-top:40px } }
 
-/* Promotional brochure / 2026-10-05 */
-.brochure-section { background:var(--ink); color:var(--paper) }
-.brochure-section .eyebrow,.brochure-section h2 span { color:var(--lavender) }
-.brochure-section .section-intro>p { color:#d7cce5; max-width:430px }
-.brochure-preview { margin:0 }
-.brochure-preview>a { display:block; border-radius:12px; overflow:hidden; background:#eee }
-.brochure-preview img { display:block; width:100%; height:auto }
-.brochure-preview figcaption { color:#d7cce5; font-size:.875rem; line-height:1.7; margin-top:16px }
-.brochure-actions { display:flex; flex-wrap:wrap; gap:16px; margin-top:26px }
-.brochure-download { background:transparent; border:1px solid var(--lavender); color:var(--lavender) }
-.brochure-download:hover { background:#302041 }
-.brochure-contact-note { color:#d7cce5; font-size:.875rem; line-height:1.8; margin:24px 0 0 }
-.brochure-contact-note a,.brand-brochure-link a { color:var(--lavender); text-decoration:underline; text-underline-offset:4px }
+/* Image-only promotional brochure / 2026-10-05 */
+.brochure-section { background:#000; padding:0; margin:0 }
+.brochure-image-link { display:block; width:100%; max-width:1600px; margin:0 auto; background:#000 }
+.brochure-image-link img { display:block; width:100%; height:auto }
+.brochure-image-link:focus-visible { outline:3px solid var(--lavender); outline-offset:-3px }
 .brand-brochure-link { margin:32px 0 0; line-height:1.7 }
-.brochure-section a:focus-visible { outline-color:var(--lavender) }
-@media(max-width:700px) { .brochure-actions .button { width:100%; gap:14px } }
+.brand-brochure-link a { color:var(--lavender); text-decoration:underline; text-underline-offset:4px }
