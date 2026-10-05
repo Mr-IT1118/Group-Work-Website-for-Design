@@ -35,7 +35,7 @@ git push
 
 https://mr-it1118.github.io/Group-Work-Website-for-Design/
 
-GitHub Pages 继续使用 `main` 和 `/(root)`。无需创建新的仓库或改变网址。每页的样式和脚本链接带版本号 `20261005-brand`，用于避免之前的旧主题缓存问题。
+GitHub Pages 继续使用 `main` 和 `/(root)`。无需创建新的仓库或改变网址。每页的样式和脚本链接带版本号 `20261005-brochure`，用于避免之前的旧主题缓存问题。
 
 ## 修改文件
 
@@ -63,3 +63,7 @@ GitHub Pages 继续使用 `main` 和 `/(root)`。无需创建新的仓库或改�
 ## 2026-10-05 品牌更新
 
 已加入小组提供的四款 Logo 和 Instagram 联系方式。所有上传图片均保留原始文件；二维码通过网页布局展示，并提供原图入口。网站仍为紫色、五个页面，线上需重新提交并部署后更新。
+
+## 宣传册
+
+首页新增 Promotional Brochure 展示区，支持原图查看和 JPG 下载；About 和五页页尾提供入口。原图位于 `assets/images/promotional-brochure.jpg`，保持上传内容不变。图片内仍有 COURTSIDE、@courtside、hello@courtside.com 和 www.courtside.com 等旧信息；网站的当前联系入口继续使用 @courtphantomsjjht。
